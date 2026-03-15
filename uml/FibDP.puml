@@ -1,0 +1,28 @@
+@startuml
+
+start
+note right
+Dynamic Programming
+O(n) complexity
+end note
+:Input n;
+
+if (n <= 1 ?) then (yes)
+    :return n;
+else (no)
+
+    :create array[n+1];
+    :array[0] = 0
+    array[1] = 1;
+
+    :loop for();
+    :save new value to
+    array[i] = array[i-1] + array[i-2];
+
+    :return n;
+
+endif
+
+stop
+
+@enduml

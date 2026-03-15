@@ -1,0 +1,19 @@
+@startuml
+
+start
+note right
+Iterative
+O(2ⁿ) complexity
+end note
+:Input n;
+if (n <= 1?) then (yes)
+    :return n;
+else (no)
+    :loop for;
+    :find value n;
+    :return n;
+endif
+
+stop
+
+@enduml

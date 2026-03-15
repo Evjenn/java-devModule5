@@ -1,0 +1,21 @@
+@startuml
+
+start
+note right
+Recursive
+O(n) complexity
+end note
+:Input n;
+
+if (n <= 1 ?) then (yes)
+    :return n;
+else (no)
+    :call fibonacci(n-1);
+    :call fibonacci(n-2);
+    :result = F(n-1) + F(n-2);
+    :return result;
+endif
+
+stop
+
+@enduml
