@@ -6,6 +6,7 @@ public class FibonacciNumber {
 
     }
 
+    //Time Complexity: O(n), Space Complexity: O(1)
     public static int fibonacciIterative(int n) {
         if (n <= 1) {
             return n;
@@ -21,6 +22,7 @@ public class FibonacciNumber {
         return curr;
     }
 
+    //Time Complexity: O(2ⁿ), Space Complexity: O(n)
     public static int fibonacciRecursive(int n) {
         if (n <= 1) {
             return n;
@@ -28,6 +30,7 @@ public class FibonacciNumber {
         return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
     }
 
+    //Time Complexity: O(n), Space Complexity: O(n)
     public static int fibonacciDP(int n) {
         if (n <= 1) {
             return n;
